@@ -1,0 +1,140 @@
+:root {
+  --primary: #007AFF;
+  --primary-grad: linear-gradient(135deg, #007AFF 0%, #00C6FF 100%);
+  --orange-grad: linear-gradient(135deg, #FF9500 0%, #FFCC00 100%);
+  --lavender-bg: #D4C4FB;
+  --yellow-accent: #FFD60A;
+  --ios-dark-bg: #000000;
+  --ios-dark-card: #1C1C1E;
+  --ios-dark-input: #2C2C2E;
+  --success-green: #34C759;
+  --text-sec: #8E8E93;
+  --wa-sent: #005C4B;
+  --wa-received: #202C33;
+  --wa-input-bg: #2a3942;
+}
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  -webkit-tap-highlight-color: transparent; 
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif; 
+}
+
+body { 
+  background: #111; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  overflow: hidden; 
+}
+
+.app-frame {
+  width: 393px; 
+  height: 852px; 
+  background: #fff; 
+  border-radius: 54px; 
+  position: relative;
+  overflow: hidden; 
+  box-shadow: 0 0 0 12px #222, 0 0 0 15px #111, 0 40px 100px rgba(0,0,0,0.8);
+  display: flex; 
+  flex-direction: column; 
+  transition: background 0.3s; 
+  z-index: 1;
+}
+
+.app-frame.dark-mode { 
+  background: var(--ios-dark-bg); 
+}
+
+.mesh-bg {
+  position: absolute; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  background: radial-gradient(circle at 10% 20%, rgba(0, 122, 255, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(0, 198, 255, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5) 0%, transparent 60%);
+  animation: meshShift 20s ease-in-out infinite alternate; 
+  z-index: -1; 
+  pointer-events: none;
+}
+
+@keyframes meshShift { 
+  0% { transform: translate(0, 0) rotate(0deg); } 
+  100% { transform: translate(-5%, -5%) rotate(5deg); } 
+}
+
+.status-bar { 
+  height: 47px; 
+  padding: 0 32px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-end; 
+  font-size: 14px; 
+  font-weight: 600; 
+  z-index: 1000; 
+  transition: color 0.3s; 
+  background: transparent; 
+  pointer-events: none; 
+}
+
+.viewport { 
+  flex: 1; 
+  position: relative; 
+  overflow-y: auto; 
+  z-index: 2; 
+  scrollbar-width: none; 
+}
+
+.viewport::-webkit-scrollbar { 
+  display: none; 
+}
+
+.screen { 
+  position: absolute; 
+  inset: 0; 
+  display: none; 
+  flex-direction: column; 
+  padding: 24px; 
+  animation: screenFade 0.4s cubic-bezier(0.1, 0.8, 0.1, 1); 
+}
+
+.screen.active { 
+  display: flex; 
+}
+
+@keyframes screenFade { 
+  from { opacity: 0; transform: translateY(10px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
+:root {
+  --primary: #007AFF;
+  --primary-grad: linear-gradient(135deg, #007AFF 0%, #00C6FF 100%);
+  --orange-grad: linear-gradient(135deg, #FF9500 0%, #FFCC00 100%);
+  --lavender-bg: #D4C4FB;
+  --yellow-accent: #FFD60A;
+  --ios-dark-bg: #000000;
+  --ios-dark-card: #1C1C1E;
+  --ios-dark-input: #2C2C2E;
+  --success-green: #34C759;
+  --text-sec: #8E8E93;
+  --wa-sent: #005C4B;
+  --wa-received: #202C33;
+  --wa-input-bg: #2a3942;
+  
+  /* New Color Variables */
+  --gradient-mesh: radial-gradient(circle at 10% 20%, rgba(0, 122, 255, 0.08) 0%, transparent 40%),
+                   radial-gradient(circle at 90% 80%, rgba(0, 198, 255, 0.08) 0%, transparent 40%),
+                   radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5) 0%, transparent 60%);
+}
+
+/* Update mesh background for dark mode */
+.dark-mode .mesh-bg {
+  background: radial-gradient(circle at 10% 20%, rgba(10, 132, 255, 0.15) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(94, 92, 230, 0.15) 0%, transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(191, 90, 242, 0.1) 0%, transparent 60%);
+}

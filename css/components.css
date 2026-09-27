@@ -1,0 +1,492 @@
+/* Input Styles */
+.ios-input { 
+  width: 100%; 
+  background: #FFFFFF; 
+  border: 1px solid #D1D1D6; 
+  padding: 14px 16px; 
+  border-radius: 12px; 
+  font-size: 16px; 
+  margin-bottom: 12px; 
+  outline: none; 
+  transition: border-color 0.2s;
+}
+
+.ios-input:focus { 
+  border-color: var(--primary); 
+}
+
+/* Card Styles */
+.card { 
+  background: white; 
+  border-radius: 24px; 
+  padding: 18px; 
+  margin-bottom: 15px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
+  color: black; 
+  border: 1px solid rgba(0,0,0,0.02); 
+  transition: 0.2s; 
+}
+
+.card-accent { 
+  background: #6D59FF; 
+  color: white; 
+  border: none; 
+}
+
+/* Button Styles */
+.btn { 
+  width: 100%; 
+  padding: 16px; 
+  border-radius: 18px; 
+  font-size: 16px; 
+  font-weight: 700; 
+  border: none; 
+  cursor: pointer; 
+  transition: 0.2s; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.btn-pill { 
+  border-radius: 30px; 
+}
+
+.btn-primary { 
+  background: var(--primary); 
+  color: white; 
+}
+
+.btn-white { 
+  background: white; 
+  color: black; 
+}
+
+.btn-black { 
+  background: black; 
+  color: white; 
+}
+
+.btn-outline { 
+  background: transparent; 
+  border: 1.5px solid #000; 
+  color: #000; 
+}
+
+.btn-yellow {
+  background: var(--yellow-accent);
+  color: black;
+  border: none;
+}
+
+/* Features Grid */
+.features-grid { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 12px; 
+  margin: 20px 0; 
+}
+
+.feature-box { 
+  background: #1C1C1E; 
+  aspect-ratio: 1.1; 
+  border-radius: 26px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 8px; 
+  border: 1px solid #2C2C2E; 
+  cursor: pointer; 
+  color: white; 
+  transition: 0.2s; 
+}
+
+.feature-box:active { 
+  transform: scale(0.95); 
+  opacity: 0.8; 
+}
+
+.feature-box i { 
+  font-size: 26px; 
+  color: var(--primary); 
+}
+
+.feature-box span { 
+  font-size: 11px; 
+  font-weight: 800; 
+  opacity: 0.9; 
+}
+
+/* Profile Elements */
+.pfp-lg { 
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50px; 
+  border: 3px solid white; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 40px; 
+  font-weight: 900; 
+  background: var(--primary-grad); 
+  color: white; 
+  margin: 0 auto 15px; 
+  overflow: hidden; 
+  position: relative; 
+}
+
+.pfp-box { 
+  width: 54px; 
+  height: 54px; 
+  border-radius: 27px; 
+  background: #fff; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-weight: 800; 
+  color: var(--primary); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+  border: 2px solid white; 
+  cursor: pointer; 
+  overflow: hidden; 
+  position: relative; 
+}
+
+.pfp-box img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.online-indicator { 
+  width: 12px; 
+  height: 12px; 
+  background: var(--success-green); 
+  border-radius: 6px; 
+  border: 2px solid #000; 
+  position: absolute; 
+  bottom: 2px; 
+  right: 2px; 
+}
+
+/* Stats Grid */
+.stats-grid { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+  margin: 15px 0; 
+}
+
+.stat-card { 
+  background: rgba(255,255,255,0.05); 
+  padding: 12px 5px; 
+  border-radius: 15px; 
+  text-align: center; 
+  border: 1px solid rgba(255,255,255,0.1); 
+}
+
+.stat-card b { 
+  font-size: 16px; 
+  display: block; 
+}
+
+.stat-card span { 
+  font-size: 9px; 
+  color: var(--text-sec); 
+  text-transform: uppercase; 
+  font-weight: 800; 
+}
+
+/* Detail Items */
+.detail-item { 
+  display: flex; 
+  justify-content: space-between; 
+  padding: 12px 18px; 
+  background: rgba(255,255,255,0.03); 
+  border-radius: 15px; 
+  font-size: 13px; 
+  margin-bottom: 8px; 
+}
+
+.detail-item span { 
+  color: var(--text-sec); 
+  font-weight: 600; 
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute; 
+  top: 75px; 
+  right: 25px; 
+  width: 160px;
+  background: rgba(28, 28, 30, 0.98); 
+  backdrop-filter: blur(25px);
+  border-radius: 20px; 
+  border: 1px solid #333; 
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  z-index: 5000; 
+  display: none; 
+  overflow: hidden;
+  animation: menuIn 0.25s cubic-bezier(0.1, 0.8, 0.1, 1);
+}
+
+.dropdown-item { 
+  padding: 16px 20px; 
+  font-size: 14px; 
+  color: white; 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  cursor: pointer; 
+  transition: 0.2s; 
+  border-bottom: 1px solid rgba(255,255,255,0.05); 
+}
+
+.dropdown-item:last-child { 
+  border: none; 
+}
+
+.dropdown-item:active { 
+  background: rgba(255,255,255,0.1); 
+}
+
+.dropdown-item.danger { 
+  color: #FF453A; 
+}
+
+@keyframes menuIn { 
+  from { transform: scale(0.9) translateY(-10px); opacity: 0; } 
+  to { transform: scale(1) translateY(0); opacity: 1; } 
+}
+
+/* Toast */
+.toast-wrap { 
+  position: absolute; 
+  top: 15px; 
+  left: 15px; 
+  right: 15px; 
+  display: none; 
+  z-index: 9999; 
+  pointer-events: none; 
+}
+
+.toast-content { 
+  background: rgba(255, 255, 255, 0.95); 
+  backdrop-filter: blur(25px); 
+  width: 100%; 
+  border-radius: 22px; 
+  padding: 18px; 
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15); 
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+  animation: toastIn 0.8s cubic-bezier(0.19, 1, 0.22, 1); 
+}
+/* Add these new colorful components to your existing components.css */
+
+/* Gradient Buttons */
+.btn-gradient-1 {
+    background: var(--gradient-1);
+    color: white;
+    border: none;
+    box-shadow: 0 8px 16px rgba(10, 132, 255, 0.3);
+}
+
+.btn-gradient-2 {
+    background: var(--gradient-2);
+    color: white;
+    border: none;
+    box-shadow: 0 8px 16px rgba(255, 159, 10, 0.3);
+}
+
+.btn-gradient-3 {
+    background: var(--gradient-3);
+    color: white;
+    border: none;
+    box-shadow: 0 8px 16px rgba(48, 209, 88, 0.3);
+}
+
+.btn-gradient-4 {
+    background: var(--gradient-4);
+    color: white;
+    border: none;
+    box-shadow: 0 8px 16px rgba(191, 90, 242, 0.3);
+}
+
+/* Animated Gradient Cards */
+.card-animated {
+    background: linear-gradient(-45deg, #1C1C1E, #2C2C2E, #1C1C1E, #2C2C2E);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glowing Effects */
+.glow-primary {
+    box-shadow: 0 0 20px rgba(10, 132, 255, 0.3);
+}
+
+.glow-success {
+    box-shadow: 0 0 20px rgba(48, 209, 88, 0.3);
+}
+
+.glow-warning {
+    box-shadow: 0 0 20px rgba(255, 159, 10, 0.3);
+}
+
+.glow-danger {
+    box-shadow: 0 0 20px rgba(255, 69, 58, 0.3);
+}
+
+/* Colorful Badges */
+.badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.badge-primary {
+    background: rgba(10, 132, 255, 0.1);
+    color: var(--primary);
+    border: 1px solid rgba(10, 132, 255, 0.2);
+}
+
+.badge-success {
+    background: rgba(48, 209, 88, 0.1);
+    color: var(--success);
+    border: 1px solid rgba(48, 209, 88, 0.2);
+}
+
+.badge-warning {
+    background: rgba(255, 159, 10, 0.1);
+    color: var(--warning);
+    border: 1px solid rgba(255, 159, 10, 0.2);
+}
+
+.badge-danger {
+    background: rgba(255, 69, 58, 0.1);
+    color: var(--danger);
+    border: 1px solid rgba(255, 69, 58, 0.2);
+}
+
+.badge-purple {
+    background: rgba(191, 90, 242, 0.1);
+    color: var(--purple);
+    border: 1px solid rgba(191, 90, 242, 0.2);
+}
+
+/* Progress Bars */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--gradient-1);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Colorful Dividers */
+.divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    margin: 20px 0;
+}
+
+.divider-rainbow {
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--success), var(--warning), var(--danger), var(--purple));
+    margin: 20px 0;
+}
+
+/* Floating Action Button */
+.fab {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background: var(--gradient-1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 8px 16px rgba(10, 132, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.fab:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(10, 132, 255, 0.4);
+}
+
+/* Colorful List Items */
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(145deg, #1C1C1E, #2C2C2E);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.list-item-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.list-item-icon.primary {
+    background: rgba(10, 132, 255, 0.1);
+    color: var(--primary);
+}
+
+.list-item-icon.success {
+    background: rgba(48, 209, 88, 0.1);
+    color: var(--success);
+}
+
+/* Pulse Animation */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Shimmer Effect */
+.shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}

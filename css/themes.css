@@ -1,0 +1,467 @@
+/* Dark Theme Base */
+.dark-mode {
+    --primary: #0A84FF;
+    --primary-glow: rgba(10, 132, 255, 0.3);
+    --secondary: #5E5CE6;
+    --success: #30D158;
+    --warning: #FF9F0A;
+    --danger: #FF453A;
+    --info: #64D2FF;
+    --purple: #BF5AF2;
+    --pink: #FF375F;
+    --gradient-1: linear-gradient(135deg, #0A84FF 0%, #5E5CE6 100%);
+    --gradient-2: linear-gradient(135deg, #FF9F0A 0%, #FF375F 100%);
+    --gradient-3: linear-gradient(135deg, #30D158 0%, #64D2FF 100%);
+    --gradient-4: linear-gradient(135deg, #BF5AF2 0%, #0A84FF 100%);
+    
+    /* Text colors with better contrast */
+    --text-primary: #FFFFFF;
+    --text-secondary: #EBEBF5;
+    --text-tertiary: #98989E;
+    --text-link: #0A84FF;
+}
+
+.dark-mode .ios-input { 
+    background: #1C1C1E; 
+    color: var(--text-primary); 
+    border: 1px solid #3A3A3C; 
+}
+
+.dark-mode .ios-input::placeholder {
+    color: var(--text-tertiary);
+}
+
+.dark-mode .ios-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.dark-mode .card { 
+    background: var(--ios-dark-card); 
+    color: var(--text-primary); 
+    border: 1px solid #2C2C2E; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .card h1,
+.dark-mode .card h2,
+.dark-mode .card h3,
+.dark-mode .card h4 {
+    color: var(--text-primary);
+}
+
+.dark-mode .card p {
+    color: var(--text-secondary);
+}
+
+.dark-mode .card-accent { 
+    background: linear-gradient(135deg, #5E5CE6 0%, #0A84FF 100%);
+    border: none;
+    box-shadow: 0 8px 20px rgba(90, 90, 230, 0.3);
+}
+
+.dark-mode .card-accent p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-mode .card-green {
+    background: linear-gradient(135deg, #30D158 0%, #64D2FF 100%);
+    color: var(--text-primary);
+    border: none;
+    box-shadow: 0 8px 20px rgba(48, 209, 88, 0.2);
+}
+
+.dark-mode .status-bar { 
+    color: var(--text-primary); 
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.dark-mode .btn { 
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.dark-mode .btn-primary { 
+    background: var(--primary); 
+    color: white; 
+}
+
+.dark-mode .btn-outline { 
+    border-color: var(--text-secondary); 
+    color: var(--text-primary); 
+}
+
+.dark-mode .btn-outline:hover {
+    border-color: var(--primary);
+    background: rgba(10, 132, 255, 0.1);
+}
+
+.dark-mode .btn-white {
+    background: var(--dark-card);
+    color: var(--text-primary);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-mode .btn-yellow {
+    background: #FFD60A;
+    color: #000000;
+    font-weight: 700;
+}
+
+.dark-mode .bottom-nav { 
+    background: rgba(28, 28, 30, 0.95); 
+    backdrop-filter: blur(30px); 
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.dark-mode .nav-item { 
+    color: var(--text-tertiary); 
+}
+
+.dark-mode .nav-item.active { 
+    color: var(--primary); 
+}
+
+.dark-mode .nav-item i { 
+    color: currentColor; 
+}
+
+/* Feature Boxes with better contrast */
+.dark-mode .feature-box {
+    background: linear-gradient(145deg, #1C1C1E, #2C2C2E);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dark-mode .feature-box i { 
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary-glow);
+}
+
+.dark-mode .feature-box span { 
+    color: var(--text-primary);
+    font-weight: 600;
+    opacity: 1;
+}
+
+/* Chat Styles with better contrast */
+.dark-mode .chat-bubble.sent { 
+    background: linear-gradient(135deg, #005C4B 0%, #128C7E 100%);
+    box-shadow: 0 2px 8px rgba(0, 92, 75, 0.3);
+    color: white;
+}
+
+.dark-mode .chat-bubble.received { 
+    background: linear-gradient(135deg, #202C33 0%, #2A3B45 100%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    color: white;
+}
+
+.dark-mode .sender-label { 
+    color: var(--warning);
+    font-weight: 800;
+    background: none;
+    -webkit-text-fill-color: initial;
+}
+
+.dark-mode .chat-meta { 
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Profile Elements */
+.dark-mode .pfp-lg {
+    background: var(--gradient-1);
+    border: 3px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 20px rgba(10, 132, 255, 0.3);
+    color: white;
+}
+
+.dark-mode .pfp-box {
+    background: linear-gradient(145deg, #2C2C2E, #1C1C1E);
+    border: 2px solid rgba(255,255,255,0.1);
+    color: var(--primary);
+}
+
+/* Stats Cards with better contrast */
+.dark-mode .stat-card {
+    background: linear-gradient(145deg, #1C1C1E, #2C2C2E);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.dark-mode .stat-card b { 
+    color: var(--text-primary);
+    font-size: 18px;
+}
+
+.dark-mode .stat-card span { 
+    color: var(--text-tertiary); 
+}
+
+.dark-mode .stat-card:nth-child(1) b {
+    color: var(--primary);
+}
+
+.dark-mode .stat-card:nth-child(2) b {
+    color: var(--success);
+}
+
+.dark-mode .stat-card:nth-child(3) b {
+    color: var(--warning);
+}
+
+/* Detail Items */
+.dark-mode .detail-item {
+    background: linear-gradient(145deg, #1C1C1E, #2C2C2E);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.dark-mode .detail-item span { 
+    color: var(--text-tertiary); 
+}
+
+.dark-mode .detail-item b {
+    color: var(--text-primary);
+}
+
+/* Dropdown Menu */
+.dark-mode .dropdown-menu {
+    background: rgba(28, 28, 30, 0.98);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.dark-mode .dropdown-item { 
+    color: var(--text-primary);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.dark-mode .dropdown-item i {
+    color: var(--primary);
+}
+
+.dark-mode .dropdown-item.danger { 
+    color: var(--danger); 
+}
+
+.dark-mode .dropdown-item.danger i {
+    color: var(--danger);
+}
+
+/* Toast */
+.dark-mode .toast-content {
+    background: rgba(28, 28, 30, 0.95);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.dark-mode .toast-title {
+    color: var(--text-primary);
+}
+
+.dark-mode .toast-body {
+    color: var(--text-secondary);
+}
+
+/* QR Code Container */
+.dark-mode .qr-container {
+    background: white;
+    padding: 15px;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.dark-mode .timer-display {
+    font-family: 'Courier New', monospace;
+    font-size: 52px;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--primary), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 10px 0;
+}
+
+/* Chat Input Area */
+.dark-mode .chat-input-area {
+    background: linear-gradient(135deg, #202c33, #1a242b);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.dark-mode .chat-input-container {
+    background: linear-gradient(145deg, #2a3942, #1e2b33);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.dark-mode .chat-input-container i {
+    color: var(--text-secondary);
+}
+
+.dark-mode .chat-input {
+    color: var(--text-primary);
+}
+
+.dark-mode .chat-input::placeholder {
+    color: var(--text-tertiary);
+}
+
+.dark-mode .send-btn {
+    background: linear-gradient(135deg, var(--success), #30B0B0);
+    box-shadow: 0 4px 12px rgba(48, 209, 88, 0.3);
+}
+
+/* Attendance Circle */
+.dark-mode .att-circle {
+    border: 6px solid var(--success);
+    background: linear-gradient(135deg, #1C1C1E, #2C2C2E);
+    color: var(--success);
+}
+
+/* Tab Bar */
+.dark-mode .tab-bar {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.dark-mode .tab-item {
+    color: var(--text-tertiary);
+}
+
+.dark-mode .tab-item.active {
+    color: var(--primary);
+}
+
+/* Member Select */
+.dark-mode .member-select {
+    background: linear-gradient(145deg, #1C1C1E, #2C2C2E);
+    border: 1px solid rgba(255,255,255,0.05);
+    color: var(--text-primary);
+}
+
+.dark-mode .member-select.selected {
+    border: 1.5px solid var(--primary);
+    background: linear-gradient(145deg, rgba(10, 132, 255, 0.1), rgba(94, 92, 230, 0.1));
+}
+
+/* Secure Exit Card */
+.dark-mode .secure-exit-card {
+    background: linear-gradient(145deg, #000000, #1C1C1E);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+}
+
+.dark-mode .secure-exit-card p {
+    color: var(--text-secondary);
+}
+
+/* Chat Messages Container */
+.dark-mode #chat-messages-container {
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    background-blend-mode: overlay;
+    background-color: #0b141a;
+    background-size: 50%;
+}
+
+/* Online Indicator */
+.dark-mode .online-indicator {
+    background: var(--success);
+    border: 2px solid #000;
+    box-shadow: 0 0 0 2px rgba(48, 209, 88, 0.3);
+}
+
+/* Verification Badge */
+.dark-mode .verified-badge {
+    background: linear-gradient(135deg, rgba(48, 209, 88, 0.1), rgba(100, 210, 255, 0.1));
+    color: var(--success);
+    border: 1px solid rgba(48, 209, 88, 0.2);
+}
+
+/* Institutional Header */
+.dark-mode .official-header {
+    background: linear-gradient(135deg, rgba(28, 28, 30, 0.8), rgba(44, 44, 46, 0.8));
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.dark-mode .official-header h2 {
+    color: var(--text-primary);
+}
+
+.dark-mode .official-header p {
+    color: var(--text-secondary);
+}
+
+/* Time Table Rows */
+.dark-mode .tt-row {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    color: var(--text-secondary);
+}
+
+.dark-mode .tt-row span:first-child {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Scrollbar for dark mode */
+.dark-mode .viewport::-webkit-scrollbar {
+    width: 4px;
+    background: transparent;
+}
+
+.dark-mode .viewport::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+.dark-mode .viewport::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+}
+
+/* Text colors for headings */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4 {
+    color: var(--text-primary);
+}
+
+.dark-mode p {
+    color: var(--text-secondary);
+}
+
+.dark-mode .text-primary { 
+    color: var(--primary); 
+}
+
+.dark-mode .text-success { 
+    color: var(--success); 
+}
+
+.dark-mode .text-warning { 
+    color: var(--warning); 
+}
+
+.dark-mode .text-danger { 
+    color: var(--danger); 
+}
+
+/* Admin page specific */
+.dark-mode #sc-admin .card {
+    background: var(--dark-card);
+    color: var(--text-primary);
+}
+
+.dark-mode #sc-admin h2,
+.dark-mode #sc-admin h3 {
+    color: var(--text-primary);
+}
+
+.dark-mode #sc-admin .ios-input {
+    background: var(--dark-input);
+    color: var(--text-primary);
+}
+
+.dark-mode #sc-admin .btn-outline {
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+}
